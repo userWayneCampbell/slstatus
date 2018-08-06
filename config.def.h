@@ -61,11 +61,12 @@ static const char unknown_str[] = "...";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-    { cpu_perc, "[CPU %s%] ",   NULL },
-    { ram_perc, "[RAM %s%] ",   NULL },
+    { username, "[ %s ] ",       NULL },
+    { cpu_perc, "[ CPU %s% ] ",   NULL },
+    { ram_perc, "[ RAM %s% ] ",   NULL },
     //{vol_perc, "[VOL %s%] ", "/dev/mixer1" },
-    { battery_perc, "[BAT %s%] ", "BAT0"},
-    { ipv4,     "[LAN IP %s] ",  "eno1"},
-    { ipv4,     "[WLAN IP %s] ", "wlo1"},
-	{ datetime, "[%s] ",           "%F %r" }
+    { battery_perc, "[ BAT %s% ] ", "BAT0"},
+    { ipv4,     "[ LAN IP %s ] ",  "eno1"},
+    { ipv4,     "[ WLAN IP %s ] ", "wlo1"},
+	{ datetime, "[ %s ]",           "%F %r" }
 };
